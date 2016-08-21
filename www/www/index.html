@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ГРАНДВОЯЖ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="css/slicknav.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<!--header-->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <h1>гранд<span>в<span></span>яж</span></h1>
+            </a>
+        </div>
+        <div class="header-links">
+            <ul class="header-phone">
+                <li><a href="tel:+380635496584" class="life">063 54 965 84</a></li>
+                <li><a href="tel:+380635496584" class="kievstar">067 54 965 84</a></li>
+                <li><a href="tel:+380635496584" class="mts">066 54 965 84</a></li>
+            </ul>
+            <ul class="header-nav" id="menu">
+                <li><a href="#price" data-scroll="#price">Направления и Цены</a></li>
+                <li><a href="#advantages" data-scroll="#advantages">Преимущества</a></li>
+                <li><a href="#recall" data-scroll="#recall">Отзывы</a></li>
+                <li><a href="#order-block" data-scroll="#order-block">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!--main-->
+<main>
+    <div class="gallery">
+        <div class="slide">
+            <picture>
+                <source srcset="img/slide-1-320.jpg" media="(max-width: 479px)">
+                <source srcset="img/slide-1-480.jpg" media="(max-width: 767px)">
+                <img src="img/slide-1.jpg" alt="">
+            </picture>
+            <div class="slide-text">
+                <h6>ПАССАЖИРСКИЕ ПЕРЕВОЗКИ<br><span>к морю</span></h6>
+            </div>
+        </div>
+        <div class="slide">
+            <picture>
+                <source srcset="img/slide-2-320.jpg" media="(max-width: 479px)">
+                <source srcset="img/slide-2-480.jpg" media="(max-width: 767px)">
+                <img src="img/slide-2.jpg" alt="">
+            </picture>
+            <div class="slide-text">
+                <h6>Автобус<span> Харьков — Одесса</span></h6>
+            </div>
+        </div>
+        <div class="slide">
+            <picture>
+                <source srcset="img/slide-3-320.jpg" media="(max-width: 479px)">
+                <source srcset="img/slide-3-480.jpg" media="(max-width: 767px)">
+                <img src="img/slide-3.jpg" alt="">
+            </picture>
+            <div class="slide-text">
+                <h6 class="dark">Студентам и пенсионерам <span>скидка 5%</span></h6>
+            </div>
+        </div>
+    </div>
+    <div class="timer">
+        <div class="container">
+            <div class="timer-wrap">
+                <div class="title">
+                    <h6>
+                        <span>скидка</span> на первую поездку
+                    </h6>
+                    <span class="red-star">Постоянные скидки пенсионерам и студентам</span>
+                </div>
+                <div class="timer-block">
+                    <span>СКИДКА ДЕЙСТВУЕТ ЕЩЕ</span>
+                    <div id="CDT"></div>
+                </div>
+                <div class="form">
+                    <div class="title">
+                        <h6>
+                            <span>ПОехали!</span>
+                        </h6>
+                    </div>
+                    <form>
+                        <input type="text" id="name" placeholder="Как вас зовут?" class="required" name="name_field">
+                        <input type="text" id="phone" placeholder="Номер телефона" class="required" name="phone_field" pattern="/^[ 0-9]+$]/">
+                        <input type="submit" id="submit" value="получить скидку" class="preorder-btn checkout">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price" id="price">
+        <div class="container">
+            <div class="title">
+                <h6>
+                    <span>Направления</span> и цены
+                </h6>
+            </div>
+            <div class="row">
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">380 грн</span>
+                        <span class="price-red">330 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">04:50</span>
+                        <span class="kilometers">475 км</span>
+                        <span class="time-dist">~6 ч. 50 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Кирилловка</span>
+                        <span>Харьков</span>
+                    </div>
+                </div>
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">380 грн</span>
+                        <span class="price-red">330 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">04:50</span>
+                        <span class="kilometers">475 км</span>
+                        <span class="time-dist">~6 ч. 50 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Кирилловка</span>
+                        <span>Харьков</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">490 грн</span>
+                        <span class="price-red">450 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">08:41</span>
+                        <span class="kilometers">691 км</span>
+                        <span class="time-dist">~10 ч. 41 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Харьков</span>
+                        <span>Коблево</span>
+                    </div>
+                </div>
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">490 грн</span>
+                        <span class="price-red">450 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">08:41</span>
+                        <span class="kilometers">691 км</span>
+                        <span class="time-dist">~10 ч. 41 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Харьков</span>
+                        <span>Коблево</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">380 грн</span>
+                        <span class="price-red">330 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">09:07</span>
+                        <span class="kilometers">715 км</span>
+                        <span class="time-dist">~11 ч. 07 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Харьков</span>
+                        <span>ОДЕССА</span>
+                    </div>
+                </div>
+                <div class="price-block">
+                    <div class="price-holder">
+                        <span class="price-cross">380 грн</span>
+                        <span class="price-red">330 <span>грн</span></span>
+                    </div>
+                    <div class="distance">
+                        <span class="time-start">22:00</span>
+                        <span class="time-end">09:07</span>
+                        <span class="kilometers">715 км</span>
+                        <span class="time-dist">~11 ч. 07 мин.</span>
+                    </div>
+                    <div class="information">
+                        <span>Рейсы выполняются каждый день через Полтаву</span>
+                        <a href="#" class="btn order-btn">заказать</a>
+                    </div>
+                    <div class="direction">
+                        <span class="start-town">Харьков</span>
+                        <span>ОДЕССА</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages" id="advantages">
+        <div class="container">
+            <div class="title">
+                <h6>
+                    <span>Наши</span> преимущества
+                </h6>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-1.png" alt="">
+                <span>Опытные водители</span>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-2.png" alt="">
+                <span>Комфортные автобусы</span>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-3.png" alt="">
+                <span>Бесплатный перекус</span>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-4.png" alt="">
+                <span>Страховка пассажиров</span>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-5.png" alt="">
+                <span>удобное <br>время</span>
+            </div>
+            <div class="advantages-block">
+                <img src="img/advantages-img-6.png" alt="">
+                <span>Постоянные скидки</span>
+            </div>
+        </div>
+    </div>
+    <div class="recall" id="recall">
+        <div class="container">
+            <div class="title">
+                <h6>
+                    <span>отзывы</span> клиентов
+                </h6>
+            </div>
+            <div class="recall-wrap">
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-1.png" alt="">
+                        <span class="recall-name">Оксана Лесная</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-2.png" alt="">
+                        <span class="recall-name">Евгений Ладожный</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-3.png" alt="">
+                        <span class="recall-name">Елена Остапенко</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-4.png" alt="">
+                        <span class="recall-name">Елена Остапенко</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-5.png" alt="">
+                        <span class="recall-name">Елена Остапенко</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+                <div class="recall-block">
+                    <div class="recall-avatar">
+                        <img src="img/avatar-6.png" alt="">
+                        <span class="recall-name">Елена Остапенко</span>
+                    </div>
+                    <p>Добирались из Харькова в Одессу.
+                        Очень довольны качеством
+                        обсуживания и самими атобусами,
+                        чистенькие, аккуратные. И скидка
+                        для студентов была весьма кстати.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="order" id="order-block">
+        <div class="container">
+            <div class="title">
+                <h6>
+                    <span>Предварительный</span> заказ
+                </h6>
+            </div>
+            <div class="order-block">
+                <span>Мы обязательно вам перезвоним и все уточним!</span>
+                <form>
+                    <div class="row-input">
+                        <select name="name_field" id="from" class="required" data-placeholder="Откуда">
+                            <option value=""></option>
+                            <option value="Харьков">Харьков</option>
+                            <option value="Полтава">Полтава</option>
+                            <option value="Кириловка">Кириловка</option>
+                            <option value="Одесса">Одесса</option>
+                            <option value="Коблево">Коблево</option>
+                        </select>
+                        <select name="name_field" id="to" class="required" data-placeholder="Куда">
+                            <option value=""></option>
+                            <option value="Харьков">Харьков</option>
+                            <option value="Полтава">Полтава</option>
+                            <option value="Кириловка">Кириловка</option>
+                            <option value="Одесса">Одесса</option>
+                            <option value="Коблево">Коблево</option>
+                        </select>
+                        <div class="date" data-provide="datepicker">
+                            <input type="text" id="when" placeholder="Когда" class="required" name="name_field">
+                            <div class="input-group-addon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-input">
+                        <input type="text" id="order-name" placeholder="Как вас зовут?" class="required" name="name_field">
+                        <input type="text" id="order-phone" placeholder="Номер телефона" class="required" name="phone_field">
+                    </div>
+                    <input type="submit" value="заказать" class="preorder-btn checkout">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <ul class="header-phone">
+            <li><a href="tel:+380635496584" class="life">063 54 965 84</a><span>Харьков, ул. Сумская, 7</span></li>
+            <li><a href="tel:+380635496584" class="kievstar">067 54 965 84</a><span>grandvo@gmail.com</span></li>
+            <li><a href="tel:+380635496584" class="mts">066 54 965 84</a></li>
+        </ul>
+        <div class="footer-info">
+            <span>© <a href="#">Грандвояж</a></span>
+            <span>Разработано <a href="#">Wizard Studio</a></span>
+        </div>
+        <ul class="social">
+            <li><a href="#" class="vk"></a></li>
+            <li><a href="#" class="instagram"></a></li>
+            <li><a href="#" class="fb"></a></li>
+        </ul>
+    </div>
+</footer>
+<div class="for-close popup">
+    <span class="button b-close"><span></span></span>
+    <div class="form">
+        <div class="title">
+            <h6>
+                <span>Поехали!</span>
+            </h6>
+        </div>
+        <form>
+            <input type="text" id="name-popup" placeholder="Как вас зовут?" class="required" name="name_field">
+            <input type="text" id="phone-popup" name="phone_field" placeholder="Номер телефона" class="required">
+            <input type="submit" id="submit-popup" value="ЗАКАЗАТЬ" class="preorder-btn checkout">
+            <input type="hidden" id="where">
+            <input type="hidden" id="start-time">
+            <input type="hidden" id="end-time">
+            <input type="hidden" id="popup-price">
+        </form>
+    </div>
+</div>
+<div class="for-close popup-good">
+    <span class="button b-close"><span></span></span>
+    <div class="popup-text">
+        Спасибо за заявку
+    </div>
+</div>
+
+<script src="js/countdown.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script>$('.date').datepicker(
+        {language: 'ru',
+            autoclose: true
+        }
+)</script>
+<script>
+    $(function(){
+        $('#menu').slicknav();
+    });
+</script>
+</body>
+</html>
